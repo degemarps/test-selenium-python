@@ -8,7 +8,15 @@ source env/bin/activate
 set +x
 
 set -x
+python -m pip install --upgrade pip
+set +x
+
+set -x
 pip install --upgrade pip wheel
+set +x
+
+set -x
+pip install --upgrade setuptools
 set +x
 
 set -x
