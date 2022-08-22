@@ -1,11 +1,11 @@
-# from page_objects.home_page import HomePage
+from page_objects.home_page import HomePage
 
 
-# class HomeTest(HomePage):
+class HomeTest(HomePage):
 
-#     def setUp(self):
-#         super().setUp()
-#         self.open_page()
+    def setUp(self):
+        super().setUp()
+        self.open_page()
 
-#     def test_home_page(self):
-#         self.find_element(HomePage.text_btn)
+    def test_home_page(self):
+        self.find_element(HomePage.text_btn)
