@@ -8,4 +8,4 @@ class HomeTest(HomePage):
         self.open_page()
 
     def test_home_page(self):
-        self.assert_element(HomePage.text_btn)
+        self.find_element(HomePage.text_btn)
