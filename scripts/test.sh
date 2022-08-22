@@ -8,7 +8,9 @@ source env/bin/activate
 set +x
 
 set -x
-pip install -r requirements.txt
+pip install selenium
+pip install seleniumbase
+pip install -U pytest
 set +x
 
 set -x
