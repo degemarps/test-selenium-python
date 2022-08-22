@@ -4,7 +4,7 @@ python -m venv env
 set +x
 
 set -x
-source env/bin/activate
+call env/bin/activate.bat
 set +x
 
 set -x
