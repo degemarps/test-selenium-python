@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'echo teste usando selenium e python'
+                sh "chmod +x -R ${env.WORKSPACE}"
+                sh './scripts/test.sh'
             }
         }
     }
