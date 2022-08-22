@@ -20,5 +20,5 @@ sbase install chromedriver latest
 set +x
 
 set -x
-pytest --headless
+pytest -s storeWebSiteTest.py --verbose
 set +x
