@@ -12,9 +12,5 @@ pip install -r requirements.txt
 set +x
 
 set -x
-sbase install chromedriver latest
-set +x
-
-set -x
 pytest --headless
 set +x
