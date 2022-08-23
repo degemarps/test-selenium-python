@@ -9,7 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'python -m venv env'
-                sh '. env/bin/activate'
+                sh 'source env/bin/activate'
                 sh 'pip install --upgrade pip wheel --user'
                 sh 'pip install --upgrade setuptools --user'
                 sh 'pip install -r requirements.txt'
