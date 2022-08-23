@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'python -m venv env'
                 sh 'source env/bin/activate'
-                sh 'pip install --upgrade pip wheel --user'
+                sh 'pip3 install --upgrade pip wheel --user'
                 sh 'pip install --upgrade setuptools --user'
                 sh 'pip install -r requirements.txt'
                 sh 'sbase install chromedriver latest'
