@@ -1,15 +1,12 @@
 pipeline {
-    agent {
-        docker {
-            image 'python:3.9-alpine'
-        }
-    }
+    agent { label "linux" }
     
     stages {
-        stage('Test') {
+        stage('build') {
             steps {
-                sh "chmod +xwr -R ${env.WORKSPACE}"
-                sh './scripts/test.sh'
+                sh """
+                    docker build -t python_tests .
+                """
             }
         }
     }
