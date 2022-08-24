@@ -12,7 +12,7 @@ pipeline {
         stage('run') {
             steps {
                 sh """
-                    docker run --name python_test_selenium -it python_tests
+                    docker run --name python_test_selenium -t python_tests
                 """
             }
         }
