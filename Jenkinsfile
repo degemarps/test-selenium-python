@@ -9,10 +9,17 @@ pipeline {
                 """
             }
         }
-        stage('test') {
+        stage('run') {
             steps {
                 sh """
                     docker run python_tests
+                """
+            }
+        }
+        stage('test') {
+            steps {
+                sh """
+                    docker exec -ti python_tests sh -c "pytest --headless"
                 """
             }
         }
