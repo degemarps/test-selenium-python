@@ -9,5 +9,12 @@ pipeline {
                 """
             }
         }
+        stage('test') {
+            steps {
+                sh """
+                    docker run python_tests
+                """
+            }
+        }
     }
 }
