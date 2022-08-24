@@ -12,14 +12,14 @@ pipeline {
         stage('run') {
             steps {
                 sh """
-                    docker run python_tests
+                    docker run --name python_test_selenium python_tests
                 """
             }
         }
         stage('test') {
             steps {
                 sh """
-                    docker exec -ti python_tests sh -c "pytest --headless"
+                    docker exec -ti python_test_selenium sh -c "pytest --headless"
                 """
             }
         }
