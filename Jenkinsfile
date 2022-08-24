@@ -19,7 +19,7 @@ pipeline {
         stage('test') {
             steps {
                 sh """
-                    docker exec -ti python_test_selenium sh -c "pytest --headless"
+                    docker exec -ti python_test_selenium sh -c 'pytest --headless'
                 """
             }
         }

@@ -1,5 +1,7 @@
 FROM python:3.9-alpine
 
-COPY . /
+WORKDIR /selenium
+
+COPY . /selenium
 
 RUN pip install -r requirements.txt
