@@ -8,4 +8,4 @@ class HomeTest(HomePage):
         self.open_page()
 
     def test_home_page(self):
-        self.find_element(HomePage.username)
+        self.find_element(HomePage.text_button)

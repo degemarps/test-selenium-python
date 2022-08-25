@@ -1,7 +1,7 @@
 from seleniumbase import BaseCase
 
 class HomePage(BaseCase):
-    username = "#user-name"
+    text_button = "button > span"
 
     def open_page(self):
-        self.open("https://www.saucedemo.com/")
+        self.open("http://localhost:3000/")
